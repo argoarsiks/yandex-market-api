@@ -20,4 +20,15 @@
 | unhide_campaign_offers | resources/offers.py | POST | /v2/campaigns/{campaignId}/hidden-offers | https://yandex.ru/dev/market/partner-api/doc/ru/reference/assortment/deleteHiddenOffers |
 | archive_offer_mappings | resources/offers.py | POST | /v2/businesses/{businessId}/offer-mappings/archive | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/addOffersToArchive |
 | unarchive_offer_mappings | resources/offers.py | POST | /v2/businesses/{businessId}/offer-mappings/unarchive | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/deleteOffersFromArchive |
+| get_campaign_offer_stocks | resources/offers.py | POST | /v2/campaigns/{campaignId}/offers/stocks | https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks |
+| update_campaign_offer_stocks | resources/offers.py | PUT | /v2/campaigns/{campaignId}/offers/stocks | https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks |
 | generate_barcodes_report | resources/reports.py | POST | /v1/reports/documents/barcodes/generate | https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateBarcodesReport |
+| calculate_tariffs | resources/tariffs.py | POST | /v2/tariffs/calculate | https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs |
+| update_offer_prices | resources/prices.py | POST | /v2/businesses/{businessId}/offer-prices/updates | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/updateBusinessPrices |
+| list_offer_prices | resources/prices.py | POST | /v2/businesses/{businessId}/offer-prices | https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getDefaultPrices |
+| list_campaign_offer_prices | resources/prices.py | POST | /v2/campaigns/{campaignId}/offer-prices | https://yandex.ru/dev/market/partner-api/doc/ru/reference/assortment/getPricesByOfferIds |
+| list_price_quarantine_offers | resources/prices.py | POST | /v2/businesses/{businessId}/price-quarantine | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/getBusinessQuarantineOffers |
+| list_campaign_price_quarantine_offers | resources/prices.py | POST | /v2/campaigns/{campaignId}/price-quarantine | https://yandex.ru/dev/market/partner-api/doc/ru/reference/assortment/getCampaignQuarantineOffers |
+| confirm_price_quarantine | resources/prices.py | POST | /v2/businesses/{businessId}/price-quarantine/confirm | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/confirmBusinessPrices |
+| confirm_campaign_price_quarantine | resources/prices.py | POST | /v2/campaigns/{campaignId}/price-quarantine/confirm | https://yandex.ru/dev/market/partner-api/doc/ru/reference/assortment/confirmCampaignPrices |
+| get_offer_price_recommendations | resources/recommendations.py | POST | /v2/businesses/{businessId}/offers/recommendations | https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-assortment/getOfferRecommendations?tabs=defaultTabsGroup-l1m9isw0_info |
