@@ -1,7 +1,11 @@
 name: Publish to PyPI
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Lint Check"]
+    types:
+      - completed
+    branches: [main]
 
 jobs:
   publish:
