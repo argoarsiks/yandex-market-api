@@ -5,6 +5,9 @@ from yandex_market_api.resources.businesses import BusinessesResource
 from yandex_market_api.resources.categories import CategoriesResource
 from yandex_market_api.resources.offers import OffersResource
 from yandex_market_api.resources.reports import ReportsResource
+from yandex_market_api.resources.tariffs import TariffsResource
+from yandex_market_api.resources.prices import PricesResource
+from yandex_market_api.resources.recommendations import RecommendationsResource
 
 
 class YandexMarketClient:
@@ -22,6 +25,9 @@ class YandexMarketClient:
         self.categories: CategoriesResource = CategoriesResource(self._client)
         self.offers: OffersResource = OffersResource(self._client)
         self.reports: ReportsResource = ReportsResource(self._client)
+        self.tariffs: TariffsResource = TariffsResource(self._client)
+        self.prices: PricesResource = PricesResource(self._client)
+        self.recommendations: RecommendationsResource = RecommendationsResource(self._client)
 
     async def close(self) -> None:
         await self._client.close()
