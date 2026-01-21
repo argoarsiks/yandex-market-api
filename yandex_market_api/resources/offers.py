@@ -127,3 +127,19 @@ class OffersResource(BaseResource):
             path=f"/v2/businesses/{business_id}/offer-mappings/unarchive",
             json=body,
         )
+
+    async def get_campaign_offer_stocks(
+        self, campaign_id: int, limit: int | None = None, page_token: str | None = None
+    ) -> dict:
+        return await self._client.request(
+            method="POST",
+            path=f"/v2/campaigns/{campaign_id}/offers/stocks",
+            params={"limit": limit, "page_token": page_token},
+        )
+
+    async def update_campaign_offer_stocks(self, campaign_id: int, body: dict) -> dict:
+        return await self._client.request(
+            method="PUT",
+            path=f"/v2/campaigns/{campaign_id}/offers/stocks",
+            json=body,
+        )
