@@ -1,6 +1,6 @@
 [project]
 name = "yandex-market-api"
-version = "0.1.0a3"
+version = "0.1.0"
 description = "Async Python SDK for Yandex Market Partner API"
 authors = [
     {name = "argoarsiks",email = "argoars@icloud.com"}
